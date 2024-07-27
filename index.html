@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+         <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Kami</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem sapiente consectetur exercitationem! Voluptate vel facilis illum tempora optio, unde assumenda sed quam quia. Est iste odio, debitis voluptatem voluptate sit..</p>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <audio controls src="Audio WhatsApp 2024-07-26 pukul 22.30.19_2a3470d3.mp3"></audio>
+    <video controls autoplay src="laut.mp4" width="250" height="250"></video>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi a maxime eius maiores eaque ut corrupti explicabo dolores rem deleniti, pariatur animi nam aperiam quo voluptatem asperiores, quia nulla eos!.</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, natus ex! Minus ex dolores nisi consequuntur tempore perspiciatis libero ea ipsa vitae soluta? Unde sint laboriosam quisquam dolorem corrupti voluptatem?.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Rifki</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
